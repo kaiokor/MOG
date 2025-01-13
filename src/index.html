@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mog Início</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="../img_content/mog_semfundo2.ico" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
+    
+    <style>
+      html{
+        size:100%
+      }
+      body {
+        transition: 1s;
+        background-color: linear-gradient(3deg, rgb(49, 49, 49) 0%, rgba(0,0,0,1) 100%);
+        background-image: image();
+        background-repeat: no-repeat;
+      }
+
+    </style>
+</head>
+<body>  
+
+<!-- Parte do jubotron, imagem nav bar e etc. -->
+<section class="px-3 antialiased bg-cover bg-center bg-no-repeat bg-indigo-900 nav-index" style="height: 10%; background-image: url(../img_content/img_home.png);">
+  <div class="mx-auto max-w-9xl">
+    <header class="text-gray-600 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+
+
+        <!-- Imagem logo-->
+        <a href="index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <img style="width: 100px;" src="../img_content/mog_semfundo.png"/>
+        </a>
+
+        <!-- Navbar-->
+        <nav class="md:ml-auto md:mr-auto flex flex-col sm:flex-row items-center text-base justify-center" >
+          <a href="../src/index.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto underline hover:no-underline">Home</a>
+          <a href="../src/sobrenos.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto">Sobre Nós</a>
+          <a href="../src/galeria.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto">Galeria</a>
+          <a href="../src/contato.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto">Contato</a>
+        </nav>
+        
+        <!-- Botões de navegação da navbar -->
+        <div class="my-5 sm:my-0 flex justify-center mb-8 space-x-6 md:order-last md:mb-0">
+          <!--FACEBOOK-->
+          <a href="https://www.facebook.com/profile.php?id=100009572614503" target="_blank" class="my-auto hover:text-blue-600 p-2 duration-200 transition-colors rounded-full hover:bg-white text-white">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <!--WHATSAPP-->
+          <a href="https://api.whatsapp.com/send?phone=5511985080888" target="_blank" class="ml-3 my-auto hover:text-green-600 p-2 duration-200 transition-colors rounded-full hover:bg-white text-white">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+            </svg>
+          </a>
+          <div class="transitioncolor ">                           
+            <button class="ball js-theme " type="button"></button>
+          </div>      
+          <script src="../src/js/myscript.js"></script>       
+      </div>
+
+      </div>
+    </header>
+
+    <!-- Texto do jubotron -->
+      <div class="container py-32 sm:py-72 mx-auto sm:px-4" style="height: 700px;">
+        <p style=" animation-duration: 2s; font-family: 'font-serif', serif; filter: drop-shadow(0 0 10px black);" class="animate__animated animate__fadeInDown text-center sm:text-left text-6xl sm:text-8xl text-yellow-500  ">Bem-vindo ao MOG</p>
+          <p style="font-family: 'font-serif', serif; font-size: 35px; filter: drop-shadow(0 0 5px black);" class="animate__animated animate__fadeInUp text-gray-300  text-center sm:text-left">A sua montadora de orquestras</p>
+
+      </div>
+
+
+  </div>
+</section>
+
+<!-- Div da parte que leva para a página sobre nós-->
+  <div class="py-8 sm:py-2 w-auto bg-black text-white">
+      <p style="font-family: 'font-serif', serif; font-size: 20px;" class="text-center pt-6">Montagem de Orquestras em Geral<p>
+      <p style="font-family: 'font-serif', serif; font-size: 20px;" class="text-center pt-1">Conheça mais sobre nossa empresa e nosso trabalho</p>
+      <div class="pb-6 w-full text-center pt-6"><a href="../src/sobrenos.html" class=" py-2 px-12 text-white transition-colors duration-150 border border-white  focus:shadow-outline hover:bg-gray-100 hover:text-black">Sobre Nós</a></div>
+  </div>
+<!-- Div de serviços-->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4 servi-text-title">Serviços</h1>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-yellow-400 inline-flex"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-100 text-yellow-400 mb-5 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3 servi-text-title">Montagem</h2>
+            <p class="leading-relaxed text-base servi-text">Trabalhamos com a montagem e a desmontagem de bandas sinfônicas, dando total suporte no manuseio e cuidado dos instrumentos.</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-100 text-yellow-400 mb-5 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+              <circle cx="6" cy="6" r="3"></circle>
+              <circle cx="6" cy="18" r="3"></circle>
+              <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+            </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3 servi-text-title">Experiência</h2>
+            <p class="leading-relaxed text-base servi-text">Temos Vasto conhecimento em vários tipos de montagem de acordo com a sinfonia que será executada pela orquestra, desde um quinteto, á uma grande sinfonia.</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-100 text-yellow-400 mb-5 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3 servi-text-title">Clientes</h2>
+            <p class="leading-relaxed text-base servi-text">Somos uma equipe habituada e preparada para trabalhar em pequenos e grandes teatros, como a grande Sala São Paulo por exemplo. </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 pt-6 md:space-y-0 space-y-6">
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-100 text-yellow-400 mb-5 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-truck w-10 h-10"  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <desc>Download more icon variants from https://tabler-icons.io/i/truck</desc>
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="7" cy="17" r="2"></circle>
+                <circle cx="17" cy="17" r="2"></circle>
+                <path d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"></path>
+             </svg>
+            
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3 servi-text-title">Carregadores</h2>
+            <p class="leading-relaxed text-base servi-text">Temos carregadores para carga e descarga de todo transporte necessário para realização do seu evento.</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-100 text-yellow-400 mb-5 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume-2 w-10 h-10" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <desc>Download more icon variants from https://tabler-icons.io/i/volume-2</desc>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M15 8a5 5 0 0 1 0 8"></path>
+              <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a0.8 .8 0 0 1 1.5 .5v14a0.8 .8 0 0 1 -1.5 .5l-3.5 -4.5"></path>
+           </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3 servi-text-title">Montadores de Orquestra</h2>
+            <p class="leading-relaxed text-base servi-text">Temos responsáveis pela montagem dos instrumentos de acordo com o requerido pelo maestro. São especializados em manuseio de instrumentos musicais, conhecedores das particularidades da orquestra.</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-100 text-yellow-400 mb-5 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-check w-10 h-10" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <desc>Download more icon variants from https://tabler-icons.io/i/user-check</desc>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+              <path d="M16 11l2 2l4 -4"></path>
+           </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3 servi-text-title">Indicadores e Recepcionistas</h2>
+            <p class="leading-relaxed text-base servi-text">Possuimos uma equipe de responsáveis em conduzir convidados/clientes a seus assentos, bem como auxiliá-los no que for necessário para otimizar suas acomodações.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Div da galeria-->  
+  <div class="w-full">
+    <div class="px-0 sm:px-8">
+      <img style="width: 100%; height: auto;" src="../img_content/TreinoMog1.jpeg">
+    </div>
+  </div>  
+
+<!-- Descrição e botão para a Galeria  -->
+    <section class="text-gray-600 body-font"></section>
+
+      <div class="py-24" >
+        <div class="px-8 lg:w-full flex flex-col sm:flex-row sm:items-center items-start ">
+          <h1 class="font-serif flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900 text-galery-index">Uma das fotos do treinamento realizado para atender as necessidades nas funções de: indicador, recepcionista e controlador de acesso, para o cliente Theatro São Pedro</h1>
+          <form action="../src/galeria.html">
+            <button class="transition-colors duration-200 flex-shrink-0 text-black border border-black py-2 px-8 focus:shadow-outline hover:bg-black hover:text-white text-lg mt-10 sm:mt-0 text-galery-button-index" style="white-space: nowrap;">Ver Galeria</button> 
+          </form>
+        </div>  
+      </div>
+
+    </section>
+
+
+<!-- Div de contato-->
+<section class="text-gray-600 body-font"></section>
+
+<div class="py-12 contato-div-bg" >
+  <div class="px-8 gap-x-8 lg:w-full flex flex-col sm:flex-row sm:items-center items-start ">
+    <div class="">
+      <h1 class="font-serif flex-grow text-6xl text-white mb-5">Precisando de uma mãozinha?</h1>
+      <h1 class="font-serif flex-grow text-2xl text-white">Entre em contato conosco para ajuda e mais informações.</h1>
+    </div>
+
+    <div class="flex-grow ">
+      <!-- This item will not grow -->
+    </div>
+    
+    <form action="../src/contato.html">
+      <button class="transition-colors duration-200 flex-shrink-0 text-white border border-white py-2 px-8 focus:shadow-outline hover:bg-white hover:text-black text-lg mt-10 sm:mt-0" style="white-space: nowrap;">Fale Conosco</button> 
+    </form>
+  </div>  
+</div>
+
+</section>
+
+
+    
+
+
+<!-- Div de Parcerias-->
+
+<p class="text-center text-white mt-6 text-4xl font-serif">Nosso Parceiros</p>
+<div class="flex flex-row">
+  
+  <div class="w-0 sm:w-1/12">
+
+  </div>
+
+  <div class="content mx-auto mt-5 w-full sm:w-10/12 rounded-none">
+    <div class="slides">
+      <input type="radio" name="slide" id="slide1" checked>
+      <input type="radio" name="slide" id="slide2">
+      <input type="radio" name="slide" id="slide3">
+      <input type="radio" name="slide" id="slide4">
+      <input type="radio" name="slide" id="slide5">
+
+      <div class="slide s1">
+        <a href="http://www.salasaopaulo.art.br/home.aspx" target="_blank"><img src="../img_content/slider1.png" alt="Imagem Sala São Paulo"></a>
+
+      </div>
+      <div class="slide">
+        <a href="https://mozarteum.org.br/" target="_blank"><img src="../img_content/slider2.png" alt="Imagem Mozarteum"></a>
+
+
+        
+      </div>
+      <div class="slide">
+        <a href="https://theatrosaopedro.org.br/" target="_blank"><img src="../img_content/slider3.png" alt="Imagem Teatro São Pedro"></a>
+
+
+        
+      </div>
+      <div class="slide">
+        <a href="https://www.ospa.org.br/" target="_blank"><img src="../img_content/slider4.png" alt="Imagem Ospa"></a>
+
+
+        
+      </div>
+      <div class="slide">
+        <a href="https://culturaartistica.org/" target="_blank"><img src="../img_content/slider5.png" alt="Imagem CA"></a>
+
+
+        
+      </div>
+
+      <div class="navigation">
+        <label class="bar" for="slide1"></label>
+        <label class="bar" for="slide2"></label>
+        <label class="bar" for="slide3"></label>
+        <label class="bar" for="slide4"></label>
+        <label class="bar" for="slide5"></label>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="w-0 sm:w-1/12">
+
+  </div>
+
+</div>
+
+
+<div class="flex md:flex-row flex-col mx-10 gap-10 my-14">
+  <div class="hidden sm:table-row w-1/6 flex-grow"></div>
+  <a class="mx-auto" href="https://www.institutoneymarjr.org.br/" target="_blank"><img class="h-14" src="../img_content/pat1.png" alt="Imagem Instituto NJR"></a>
+  <a class="mx-auto" href="https://www.sescsp.org.br/" target="_blank"><img class="h-14" src="../img_content/pat2.png" alt="Imagem SescSP"></a>
+  <a class="mx-auto" href="https://diaestudio.com/" target="_blank"><img class="h-14" src="../img_content/pat3.png" alt="Imagem DiaEstudio"></a>
+  <a class="mx-auto" href="https://www.santamarcelinacultura.org.br/" target="_blank"><img class="h-14" src="../img_content/pat4.png" alt="Imagem Santa Marcelina Cultura"></a>
+  <a class="mx-auto" href="https://www.tucca.org.br/" target="_blank"><img class="h-14" src="../img_content/pat5.png" alt="Imagem Tucca"></a>
+  <a class="mx-auto" href="https://emesp.org.br/" target="_blank"><img class="h-14" src="../img_content/pat6.png" alt="Imagem Emesp"></a>
+  <div class="hidden sm:table-row w-1/6 flex-grow"></div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Footer --> 
+  <footer class="text-gray-600 body-font">
+    <div class="container lg:w-2/3 px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img src="../img_content/mog_semfundo.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-10 h-10 text-black p-2 bg-black rounded-full" viewBox="0 0 24 24">
+        </img>
+        <span class="ml-3 text-x1 texto-foot texto-foot">Montagem de Orquestras em Geral</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 texto-foot texto-foot">© 2022 Montagem de Orquestras
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <!--FACEBOOK-->
+        <a href="https://www.facebook.com/profile.php?id=100009572614503" target="_blank" class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+              <!--WHATSAPP-->
+        <a href="https://api.whatsapp.com/send?phone=5511985080888" target="_blank" class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+</body>
+
+</html>

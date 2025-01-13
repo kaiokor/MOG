@@ -1,0 +1,27 @@
+{
+  "name": "projeto-mog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoVitor615/Projeto-MOG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoVitor615/Projeto-MOG/issues"
+  },
+  "homepage": "https://github.com/JoaoVitor615/Projeto-MOG#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "animejs": "^3.2.1",
+    "autoprefixer": "^10.4.2",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^2.0.2"
+  }
+}

@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0%;
+    
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+*[data-theme="t-light"]{
+    --color-bg: rgb(255, 255, 255);
+    --color-bg2: rgb(255, 255, 255);
+    --color-text: rgb(0, 0, 0);
+    --color-nav-bg:var(--color-bg);
+    --color-nav-wp:#000000;
+
+    --color-nav-text:black;
+    --color-servi-text:black;
+    --color-texto-foot:black;
+    --color-text-galery-index:rgb(0, 0, 0);
+    --color-text-galery-button-index:rgb(0, 0, 0);
+    --color-text-sobre-nos:black;
+    --border-color-text-galery-button-index:black;
+    --color-servi-text-title: black;
+    --color-contato-div-bg:#df931b;
+}
+*[data-theme="t-dark"] {
+    
+    --color-bg: rgb(24, 24, 24);;
+    --color-bg2: #dcdcdc;
+    --color-text: #ffffff;
+    --color-nav-bg:#000000;
+    --color-nav-wp:#000000;
+    --color-nav-text: rgb(255, 255, 255);
+    --color-servi-text:white;
+    --color-texto-foot:white;
+    --color-text-galery-index:rgb(255, 255, 255);
+    --color-text-galery-button-index:rgb(255, 255, 255);
+    --border-color-text-galery-button-index:white;
+    --color-text-sobre-nos:white;
+    --color-servi-text-title:rgb(255, 208, 0);
+    --color-contato-div-bg: rgb(0, 0, 0);
+  }
+
+body{
+    background-color: var(--color-bg);
+}
+
+.nav-comum{
+    background-color:var(--color-nav-bg);
+}
+
+.my-title{
+    color:var(--color-nav-text);
+}
+
+.servi-text{
+    color:var(--color-servi-text);
+}
+
+.text-galery-index{
+    color: var(--color-text-galery-index);
+
+}
+
+.text-sobre-nos{
+    color: var(--color-text-sobre-nos);
+}
+
+.text-galery-button-index{
+    color: var(--color-text-galery-button-index);
+    border-color:var(--border-color-text-galery-button-index);
+}
+
+.servi-text-title{
+    color: var(--color-servi-text-title);
+}
+
+.contato-div-bg{
+    background-color: var(--color-contato-div-bg);
+}
+
+.texto-foot{
+    color: var(--color-texto-foot);
+}
+
+
+
+.transitioncolor{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #505050;
+
+    
+}
+.ball{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #000000;
+    transition: left 1s;
+    border: 3px solid #505050;
+}
+.ball-move{
+    left: calc(100% - 40px);
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.ball:focus{
+    outline: 0;
+}
+
+/* SLIDER */
+
+
+.content {
+    
+    
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #FFF;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 300ms;
+
+}
+
+.bar:hover{
+
+    background-color: white;
+    transition: 300ms;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+    
+ 
+}
+
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+ 
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+ 
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+ 
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+ 
+}
